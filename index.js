@@ -47,7 +47,7 @@ async function main_load() {
   const projection = math.matrix_identity(4);
   projection[14] = -1 / camera[2];
   const viewport = calc_viewport(width / 8, height / 8, width * 3 / 4, height * 3 / 4);
-F
+
   world2screen = (v) => {
     const m = [];
     math.v2m(m, v);
